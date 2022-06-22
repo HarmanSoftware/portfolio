@@ -1,1 +1,13 @@
- 
+ .home-txt:hover{
+    color: #020102;
+    transition-duration: 0.4s;
+ }
+ #github-btn:hover,#facebook-btn:hover,#insta-btn:hover{
+    background-color: #020102;
+    border: 1px solid #fff;
+    color: #fff;
+ }
+ #footer-html:hover,#footer-css:hover,#footer-js:hover,#footer-bs:hover,#footer-nodejs:hover,#footer-react:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+ }

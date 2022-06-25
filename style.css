@@ -2,37 +2,59 @@
 #body-color{
    background-color:#fafafa;
 }
+#home-link,#about-link,#project-link,#contact-link{
+ margin: 0px 5px 0px 5px; 
+}
+#home-link:hover,#about-link:hover,#project-link:hover,#contact-link:hover{
+  background-color: #4091c7;
+  border-radius: 5px;  
+}
+#logo-link:hover{
+  color: #99c9e9;
+}
 #github-btn:hover,#facebook-btn:hover,#insta-btn:hover{
     background-color: #1C1F23;
     border: 1px solid #fff;
     color: #fff;
     border: none;
- }
+}
  #footer-html:hover,#footer-css:hover,#footer-js:hover,#footer-bs:hover,#footer-nodejs:hover,#footer-react:hover{
     transform: scale(1.1);
     transition-duration: 0.3s;   
- }
- #about-text{
+}
+ #about-txt{
    text-align: justify;  
- }
+}
  #about-img-round{
    border-radius: 20px;
- }
+}
  #p1,#p2,#p3,#p4{
    background-color: #317DAF;
- }
+}
  #p1:hover,#p2:hover,#p3:hover,#p4:hover{
    transform: scale(1.01);
    transition-duration: 0.3s; 
- }
+}
  #p1-btn:hover,#p2-btn:hover,#p3-btn:hover,#p4-btn:hover{
    background-color: #1C1F23;
    color: #fff;
    border: none;
- }
+}
  #submit-btn:hover{
    background-color: #1C1F23;
    color: #fff;
    border: none;
-
- }
+}
+ .progress-container {
+  width: 100%;
+  height: 15px;
+  background: #ccc;
+  position: fixed;
+  margin-top: 6px;
+}
+#myBar {
+  height: 15px;  
+  background-color: #24252a;
+  width: 0%;
+  margin-bottom: 10px;  
+}

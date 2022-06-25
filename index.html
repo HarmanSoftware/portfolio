@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,9 +18,9 @@
   <body id="body-color">
     <header>
         <!-- Navigation bar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-dark border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark border-bottom fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand fs-5 text-light" href="#"><b>Harman.krd</b></a>
+          <a class="navbar-brand fs-5 text-light" href="#"><b id="logo-link">{ Harman.krd }</b></a>
           <button
             class="navbar-toggler "
             type="button"
@@ -33,28 +34,37 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active fw-bold text-light" aria-current="page">Home</a>
+              <li class="nav-item" id="home-link">
+                <a class="nav-link active fw-bold text-light"  href="#Home" aria-current="page">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold text-light" aria-current="page">About</a>
+              <li class="nav-item" id="about-link">
+                <a class="nav-link fw-bold text-light"  href="#About" aria-current="page">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold text-light" aria-current="page">Projects</a>
+              <li class="nav-item" id="project-link">
+                <a class="nav-link fw-bold text-light"  href="#Projects" aria-current="page">Projects</a>
               </li>              
-              <li class="nav-item">
-                <a class="nav-link fw-bold text-light" aria-current="page">Contact</a>
+              <li class="nav-item"  id="contact-link">
+                <a class="nav-link fw-bold text-light" href="#Contact" aria-current="page">Contact</a>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
+      </nav>  
+        <!-- On page scroll indicator  -->
+      <div class="progress-container">
+        <div id="myBar"></div>
+      </div>           
       <!-- End of Navigation bar -->
     </header>
 
     <!-- Main -->
-    <main class="container">        
-        <section id="home">            
+    <main class="container">  
+      
+
+      <script>
+       
+        </script>      
+        <section id="Home">            
                 <div class="row my-5">
                   <div class="col-lg fw-bold fs-1 bg-danger text-light rounded-start">
                     <p class="p-3 m-4">Hi There,</br> I'm Harman Muhammad </br> I'm Web Developer.</p>
@@ -91,41 +101,51 @@
               </div>
         </section>
         
-        <section id="about">
+        <section id="About">
           <div class="row my-5">
              <div class="col-sm rounded-start" style="background-color: #EFEFEF;">              
               <img src="https://res.cloudinary.com/teepublic/image/private/s--96Oz-GEl--/c_crop,x_10,y_10/c_fit,h_1109/c_crop,g_north_west,h_1260,w_945,x_-85,y_-76/co_rgb:000000,e_colorize,u_Misc:One%20Pixel%20Gray/c_scale,g_north_west,h_1260,w_945/fl_layer_apply,g_north_west,x_-85,y_-76/bo_126px_solid_white/e_overlay,fl_layer_apply,h_1260,l_Misc:Art%20Print%20Bumpmap,w_945/e_shadow,x_6,y_6/c_limit,h_1134,w_1134/c_lpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1550309775/production/designs/4215948_3.jpg" class="mx-auto d-block w-100 h-100 rounded-3" alt="about-img">             
              </div>
-             <div class="col-sm bg-danger rounded-end">
-              <p class="fs-3 fw-bold text-light mt-3 pt-2" id="about-txt">My name is Harman Muhammad i am Web Developer, I am 23 and from Barzan, Erbil. I'm graduated at college of enginnering  Software dept. in 2021-2022 and like to be MERN stack developer.
-             </div>
+             <div class="col-sm bg-dark rounded-end">
+             <p class="fs-3 fw-bold text-light mt-3 pt-2" id="about-txt">My name is Harman Muhammad i am Web Developer, I am 23 and from Barzan, Erbil. I'm graduated at college of enginnering  Software dept. in 2021-2022 and like to be MERN stack developer.
               </p>
+              <div>
+                <svg class="mx-auto d-block m-4" xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="white" class="bi bi-braces" viewBox="0 0 16 16">
+                  <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"/>
+                </svg>
+              </div>
+            </div>
           </div>
         </section>
         
-        <section id="projects" >        
+        <section id="Projects" >        
              <div class="row">
               <div class="col-sm py-4 m-1 rounded-start" id="p1">
                 <h2 class="text-light">Project Title</h2>
                 <p class="text-light">Project Desc.</p>
-                <a href="./projects/project-1.html"><button type="button" id="p1-btn" class="btn btn-light mx-auto d-block w-25">Project 1</button></a>
+                <a href="./projects/project-1.html">
+                  <button type="button" id="p1-btn" class="btn btn-light mx-auto d-block w-25 fs-5">
+                    { Project 1 }</button></a>
               </div>
               <div class="col-sm py-4 m-1 rounded-end" id="p2">
                 <h2 class="text-light">Project Title</h2>
                 <p class="text-light">Project Desc.</p>
-                <a href="./projects/project-2.html"><button type="button" id="p2-btn" class="btn btn-light mx-auto d-block w-25">Project 2</button></a>
+                <a href="./projects/project-2.html"><button type="button" id="p2-btn" class="btn btn-light mx-auto d-block w-25 fs-5">
+                  { Project 2 }</button></a>
               </div>
              </div>
              <div class="row">
               <div class="col-sm py-4 m-1 rounded-start" id="p3">
                 <h2 class="text-light">Project Title</h2>
                 <p class="text-light">Project Desc.</p>
-                <a href="./projects/project-3.html"><button type="button" id="p3-btn" class="btn btn-light mx-auto d-block w-25">Project 3</button></a>
+                <a href="./projects/project-3.html"><button type="button" id="p3-btn" class="btn btn-light mx-auto d-block w-25 fs-5">
+                  { Project 3 }</button></a>
               </div>
               <div class="col-sm py-4 m-1 rounded-start"  id="p4">
                 <h2 class="text-light">Project Title</h2>
                 <p class="text-light">Project Desc.</p>
-                <a href="./projects/project-4.html"><button type="button" id="p4-btn"  class="btn btn-light mx-auto d-block w-25">Project 4</button></a>
+                <a href="./projects/project-4.html"><button type="button" id="p4-btn"  class="btn btn-light mx-auto d-block w-25 fs-5">
+                  { Project 4 }</button></a>
               </div>
              </div>      
               </div>
@@ -133,7 +153,7 @@
           </div>
         </section>
         
-        <section id="contact" class="my-5">
+        <section id="Contact" class="my-5">
           <div class="row" style="border:3px solid #317DAF;">
             <div class="col p-3">              
               <img src="https://www.pngkit.com/png/full/290-2900188_contact-me.png" class="mx-auto d-block" alt="contact-img" width="400" height="375">
@@ -142,22 +162,26 @@
               <form class="w-70 p-2">
                 <div class="fs-2 text-light fw-bold text-center">Contact me here!</div>
                 <div class="form-group py-1">
-                  <label for="exampleInputEmail1" class="text-light">Full name</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <label for="fullName" class="text-light">Full name</label>
+                  <input type="text" class="form-control" id="fullName" placeholder="Enter full name" required>
                 </div>
                 <div class="form-group py-1">
-                  <label for="exampleInputEmail1" class="text-light">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">                  
+                  <label for="Email1" class="text-light">Email address</label>
+                  <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Enter email" required>                  
                 </div>
                 <div class="form-group py-1">
-                  <label for="exampleFormControlTextarea1" class="text-light">Your message</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <label for="Textarea" class="text-light">Your message</label>
+                  <textarea class="form-control" id="Textarea" rows="3" placeholder="Enter message" required></textarea>
                 </div>
                 <div class="form-check py-1">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label text-light" for="exampleCheck1">Check me out</label>
                 </div>
-                <button type="submit" class="btn btn-light mx-auto d-block w-25" id="submit-btn">Submit</button>         
+                <button type="submit" class="btn btn-light mx-auto d-block w-25" id="submit-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                  </svg>
+                  Send</button>         
               </form>
             </div>           
             </div>

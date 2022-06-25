@@ -1,13 +1,38 @@
- .home-txt:hover{
-    color: #020102;
-    transition-duration: 0.4s;
- }
- #github-btn:hover,#facebook-btn:hover,#insta-btn:hover{
-    background-color: #020102;
+
+#body-color{
+   background-color:#fafafa;
+}
+#github-btn:hover,#facebook-btn:hover,#insta-btn:hover{
+    background-color: #1C1F23;
     border: 1px solid #fff;
     color: #fff;
+    border: none;
  }
  #footer-html:hover,#footer-css:hover,#footer-js:hover,#footer-bs:hover,#footer-nodejs:hover,#footer-react:hover{
     transform: scale(1.1);
-    transition-duration: 0.3s;
+    transition-duration: 0.3s;   
+ }
+ #about-text{
+   text-align: justify;  
+ }
+ #about-img-round{
+   border-radius: 20px;
+ }
+ #p1,#p2,#p3,#p4{
+   background-color: #317DAF;
+ }
+ #p1:hover,#p2:hover,#p3:hover,#p4:hover{
+   transform: scale(1.01);
+   transition-duration: 0.3s; 
+ }
+ #p1-btn:hover,#p2-btn:hover,#p3-btn:hover,#p4-btn:hover{
+   background-color: #1C1F23;
+   color: #fff;
+   border: none;
+ }
+ #submit-btn:hover{
+   background-color: #1C1F23;
+   color: #fff;
+   border: none;
+
  }

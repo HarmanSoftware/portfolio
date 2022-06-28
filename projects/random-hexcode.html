@@ -11,10 +11,20 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <script src="./random-hexcode.js" defer="true"></script>
 </head>
-<body id="bg-color">
-    <div class="text-center fs-1 fw-bold">{ Get Hex color code }</div>
-    
+<body>
+  <div class="container">
+    <div class="text-center fs-1 fw-bold">{ Change Background, Get hex code }</div>
+  <div class="bg-dark p-5 m-5 rounded-2">
+   <div>
+         <button type="button" class="btn btn-light rounded-2 text-dark p-3 m-2 mx-auto d-block " onclick="handleColor()">Swich Color</button>
+         <div class="text-light text-center fs-3 fw-bold" id="hex-code">hex code</div>
+   </div>
+   
+  </div>  
+   
+  </div>    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

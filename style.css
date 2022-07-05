@@ -28,17 +28,15 @@ body{
   color: #fff;
   background: #000;
 }
-#home-link,#about-link,#project-link,#contact-link{
- display: inline-block;  
+#home-link,#about-link,#project-link,#contact-link{  
  padding: 10px 5px;
  margin: 0px 5px; 
  border-radius: 1px;
 }
 #home-link:hover,#about-link:hover,#project-link:hover,#contact-link:hover{
-  display: inline-block;
-  background-color: #FAFAFA;  
-  border-radius: 1px;
-  color: #000 !important; 
+  border-radius: 1px;  
+  color: #26c3d7 !important; 
+  font-weight: bolder;
 }
 #github-btn:hover,#facebook-btn:hover,#insta-btn:hover{
     background-color: #1C1F23;

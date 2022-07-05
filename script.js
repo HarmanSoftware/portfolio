@@ -7,3 +7,7 @@
    var scrolled = (winScroll / height) * 100;
    document.getElementById("myBar").style.width = scrolled + "%";
  }
+//  back to top function.
+function scrollToTop(){
+ window.scrollTo(0,0);    
+}

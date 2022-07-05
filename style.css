@@ -1,16 +1,44 @@
-
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.scroll-top{
+  position: fixed;
+  right: 5px;
+  bottom: 15px;
+  padding: 15px;
+  border-radius:5px;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  border: 1px solid #000;
+  color: #fff;
+  transition: all 0.5s ease 0s;  
+}
+.scroll-top:hover{
+  background-color: #1C1F23;
+  border: 1px solid #000;
+  color:#fff;
+}
 #body-color{
    background-color:#fafafa;
 }
+::selection {
+  color: #fff;
+  background: #000;
+}
 #home-link,#about-link,#project-link,#contact-link{
- margin: 0px 5px 0px 5px; 
+ display: inline-block;  
+ padding: 10px 5px;
+ margin: 0px 5px; 
+ border-radius: 1px;
 }
 #home-link:hover,#about-link:hover,#project-link:hover,#contact-link:hover{
-  background-color: #4091c7;
-  border-radius: 5px;  
-}
-#logo-link:hover{
-  color: #99c9e9;
+  display: inline-block;
+  background-color: #FAFAFA;  
+  border-radius: 1px;
+  color: #000 !important; 
 }
 #github-btn:hover,#facebook-btn:hover,#insta-btn:hover{
     background-color: #1C1F23;

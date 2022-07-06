@@ -18,49 +18,43 @@
     <link rel="stylesheet" href="url-converter.css" />
     <title>Url Converter</title>
   </head>
-  <body>    
-    <!-- Unsplash Image Resizer -->  
-      <!-- task 1: 
-            create image tag and set src to the new generated URL for the resized Image
-            (hide the image tag)
-        task 2: 
-            display the newly generated URL to the user
-            (when user clicks the newly generated URL, it should be copied to clipboard)
-        -->     
-        <div class="text-center fs-1">{ Unsplash images resizer }</div>
-      <form action="#">
-        <div class="my-3">
-          <label for="url">Unsplash URL</label>
-          <input type="text" id="url" />
-        </div>  
-        <div class="my-3">
-            <label for="width"> Width</label>
+  <body class="container"> 
+      <div class="text-center fs-1">{ Unsplash images resizer }</div>      
+        <form action="#" class="container row">
+          <label for="url">URL</label>
+          <div class="col-sm">
+            <input type="text" id="url" />
+          </div>  
+          <label for="width"> Width</label>
+          <div class="col-sm">
             <input type="text" id="width" />
           </div>    
-          <div class="my-3">
-            <label for="height"> Height</label>
+          <label for="height"> Height</label>
+          <div class="col-sm">
             <input type="text" id="height" />
-          </div> 
-        <button class="btn btn-dark w-25 mt-2" onclick="resize()">Resize</button>
-      </form>     
-    </div>
-    <div class="container">
+          </div>  
+          <div class="col-sm">
+            <button class="btn btn-dark w-25 p-3 m-3 mx-auto d-block" onclick="resize()">Resize</button>
+          </div>           
+        </form>   
+      
         <div> 
             <img id="my-img" src="" alt="unsplash-img" style="display: none;">
         </div>
         <div>
-            <h3  id="h3" style="display: none;"> Copy Url:</h3>
+          <h3  id="h3" style="display: none;"> Copy Url:</h3>
         </div>
         <div id="my-url" style="display: none;"> 
-            <svg xmlns="http://www.w3.org/2000/svg" width="196" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="196" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
                 <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
                 <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
               </svg>        
             <p>
-               
+              
                   URL:
             </p>            
         </div>
+     
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
